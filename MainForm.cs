@@ -17,9 +17,6 @@ namespace BetterWinFormsDemo
             int firstNumber = Int32.Parse(numberInput1.Text);
             int secondNumber = Int32.Parse(numberInput2.Text);
             string arithOperator = textOperator.Text;
-            //int totalSum = firstNumber + secondNumber;
-            //string sumAsString = totalSum.ToString();
-            //resultContent.Text = sumAsString + arithOperator;
             string result = myCalculator.Calculate(firstNumber, secondNumber, arithOperator);
             resultContent.Text = result;
         }
@@ -55,8 +52,6 @@ namespace BetterWinFormsDemo
     {
         public string Calculate(int num1, int num2, string calcOperator)
         {
-            //int result = num1 + num2;
-            //return result.ToString();
             double result = 0;
             switch (calcOperator) {
                 case "Addition":
